@@ -1,3 +1,13 @@
-<p>game works!</p>
+<p>Podaj imię:</p>
+<input type="text" #name>
+<button (click)="sayHello(name.value)">Przywitaj się</button>
+{{messageforUser}}
 
-{{name}}
+<br><br>
+{{rootObject.rates.EUR}}
+
+
+<p>Podaj wartość PLN w EUR:</p>
+<input type="number" #currency>
+<button (click)="check(currency.valueAsNumber)">Sprawdż!</button>
+{{result}}
