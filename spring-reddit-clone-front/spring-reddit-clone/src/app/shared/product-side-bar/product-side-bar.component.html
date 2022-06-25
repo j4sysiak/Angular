@@ -1,0 +1,8 @@
+<div class="sidebar-view-product">
+  <div style="color: black; font-weight: bold">Browse Products</div>
+  <hr />
+    <span *ngFor="let product of products">
+        <span class="product-text"><a href="/view-product/{{product.id}}">{{product.name}}</a></span>
+        <hr />
+    </span>
+</div>

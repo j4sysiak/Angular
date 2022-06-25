@@ -1,0 +1,73 @@
+<div className="container" xmlns="http://www.w3.org/1999/html">
+  <form #policyForm="ngForm" (ngSubmit)="savePolicyDataDetails(policyForm.value)">
+
+    {{ policyForm.value | json}}
+
+    <fieldset class="form-group">
+      <label>Policy Name</label>
+      <input class="form-control"
+             type="text"
+             #policyForm="ngModel"
+             id="name"
+             name="name"
+             [(ngModel)]="policy.policyName"
+      />
+    </fieldset>
+
+    <fieldset class="form-group">
+      <label>Policy Description</label>
+      <input class="form-control"
+             type="text"
+             #policyForm="ngModel"
+             id="Description"
+             name="Description"
+             [(ngModel)]="policy.policyDescription"
+      />
+    </fieldset>
+
+    <fieldset class="form-group">
+      <label>Product Name</label>
+      <div class="input-space">
+        <select
+          #policyForm="ngModel"
+          id="productName"
+          name="productName"
+          [(ngModel)]="policy.productName">
+          <option *ngFor="let product of products">
+            {{product.name}}
+          </option>
+        </select>
+      </div>
+    </fieldset>
+
+    <button type="submit" class="btn btn-success">
+      Save
+    </button>
+  </form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

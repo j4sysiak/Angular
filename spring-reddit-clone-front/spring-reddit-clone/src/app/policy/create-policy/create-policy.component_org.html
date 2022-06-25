@@ -1,0 +1,41 @@
+<div class="container">
+  <div class="row">
+    <hr />
+    <div class="create-policy-container col-md-9">
+      <form class="policy-form" [formGroup]="createPolicyForm" (ngSubmit)="createPolicy()">
+        <div class="form-group">
+          <div class="create-policy-heading">Create Policy</div>
+          <hr />
+          <input type="text" [formControlName]="'policyName'" class="form-control" style="margin-top: 5px" placeholder="Policy Name">
+
+<!--          <input type="text" class="form-control" [formControlName]="'policyCreatedDate'" style="margin-top: 5px" placeholder="Policy Created Date">-->
+
+          <select class="form-control" style="margin-top: 10px" [formControlName]="'productName'">
+            <option value="" selected disabled>Select Product</option>
+            <option *ngFor="let product of products">{{product.name}}</option>
+          </select>
+
+          <editor [formControlName]="'policyDescription'" [init]="{
+                        height: 500,
+                        menubar: false,
+                        plugins: [
+                          'advlist autolink lists link image charmap print preview anchor',
+                          'searchreplace visualblocks code fullscreen',
+                          'insertdatetime media table paste code help wordcount'
+                        ],
+                        toolbar:
+                          'undo redo | formatselect | bold italic backcolor | \
+                          alignleft aligncenter alignright alignjustify | \
+                          bullist numlist outdent indent | removeformat | help'
+                      }"></editor>
+          <span>
+              <div style="margin-top: 5px" class="float-right">
+                <button (click)="discardPolicy()" class="btnDiscard">Discard</button>
+                <button class="btnCreatePolicy">Create Policy</button>
+              </div>
+            </span>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

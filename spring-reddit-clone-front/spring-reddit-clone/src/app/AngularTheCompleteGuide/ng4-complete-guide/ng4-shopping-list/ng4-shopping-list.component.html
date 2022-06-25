@@ -1,0 +1,61 @@
+<p>Ng4ShoppingListComponent works</p>
+
+<div class="row">
+  <div class="col-xs-10">
+    <app-ng4-shopping-edit></app-ng4-shopping-edit>
+    <hr>
+    <ul class="list-group">
+      <a
+        class="list-group-item"
+        style="cursor: pointer"
+        *ngFor="let ingredient of ingredients; let i=index"
+        (click)="onEditItem(i)"
+      >
+        {{ingredient.name}} ({{ingredient.amount}})
+      </a>
+    </ul>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

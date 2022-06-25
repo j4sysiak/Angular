@@ -1,0 +1,116 @@
+<p>GarageEditComponent works!</p>
+<hr>
+
+<div class="row">
+  <div class="col-xs-12">
+    <form [formGroup]="garageForm" (ngSubmit)="onSubmit()">
+
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              formControlName="name"
+              class="form-control">
+          </div>
+        </div>
+      </div>
+
+<!--      <div class="row">-->
+<!--        <div class="col-xs-12">-->
+<!--          <div class="form-group">-->
+<!--            <label for="imagePath">Image URL</label>-->
+<!--            <input-->
+<!--              type="text"-->
+<!--              id="imagePath"-->
+<!--              formControlName="imagePath"-->
+<!--              class="form-control"-->
+<!--              #imagePath>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+
+<!--      <div class="row">-->
+<!--        <div class="col-xs-12">-->
+<!--          <img [src]="imagePath.value" class="img-responsive">-->
+<!--        </div>-->
+<!--      </div>-->
+
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="form-group">
+            <label for="description">Description</label>
+            <textarea
+              type="text"
+              id="description"
+              formControlName="description"
+              class="form-control"
+              rows="6"></textarea>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col-xs-12" formArrayName="cars">
+          <div class="row"
+               *ngFor="let carCtrl of carCtrl; let i = index"
+               [formGroupName]="i"
+               style="margin-top: 10px;">
+            <div class="col-xs-8">
+              <input
+                type="text"
+                class="form-control"
+                formControlName="make">
+            </div>
+
+            <div class="col-xs-2">
+              <input
+                type="type"
+                class="form-control"
+                formControlName="type">
+            </div>
+
+            <div class="col-xs-2">
+              <input
+                type="year"
+                class="form-control"
+                formControlName="year">
+            </div>
+
+            <div class="col-xs-2">
+              <button
+                type="button"
+                class="btn btn-danger"
+                (click)="onDeleteCar(i)">X</button>
+            </div>
+          </div>
+          <hr>
+          <div class="row">
+            <div class="col-xs-12">
+              <button
+                type="button"
+                class="btn btn-success" (click)="onAddCar()">Add Car</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="row">
+        <div class="col-xs-12">
+          <button
+            type="submit"
+            class="btn btn-success"
+            [disabled]="!garageForm.valid">Save</button>
+          <button type="submit" class="btn btn-danger" (click)="onCancel()">Cancel</button>
+        </div>
+      </div>
+
+    </form>
+  </div>
+</div>

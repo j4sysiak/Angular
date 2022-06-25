@@ -1,0 +1,8 @@
+<div class="sidebar-view-policy">
+  <div style="color: black; font-weight: bold">Browse Policies</div>
+  <hr />
+  <span *ngFor="let policy of policies">
+        <span class="policy-text"><a href="/view-policy/{{policy.policyId}}">{{policy.policyName}}</a></span>
+        <hr />
+    </span>
+</div>

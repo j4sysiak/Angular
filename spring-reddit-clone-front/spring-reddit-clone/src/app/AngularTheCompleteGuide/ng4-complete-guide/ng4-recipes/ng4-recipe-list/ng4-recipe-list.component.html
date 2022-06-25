@@ -1,0 +1,48 @@
+<p>Ng4RecipeListComponent works</p>
+<hr>
+
+<div class="row">
+  <div class="col-xs-12">
+    <button class="btn btn-success" (click)="onNewRecipe()">New Recipe</button>
+  </div>
+</div>
+
+<hr>
+
+<div class="row">
+  <div class="col-xs-12">
+    <app-ng4-recipe-item
+      *ngFor="let recipeElement of recipes; let i = index"
+      [recipe] = "recipeElement"
+      [index]="i"></app-ng4-recipe-item>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

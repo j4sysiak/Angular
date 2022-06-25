@@ -1,0 +1,57 @@
+<p>Test8Component works!</p>
+<hr>
+
+<form (ngSubmit)="onSubmit()">
+  <div class="container">
+    <div class="row" style="font-size: 20px;">
+      <label>Student: </label>
+      <input
+        type="text"
+        name="studentname"
+        [(ngModel)]="student.name"
+      >
+    </div>
+
+    <div class="row" style="font-size: 20px;">
+      <label>Courses: </label>
+    </div>
+
+    <div class="container">
+      <div *ngFor="let item of courselist" class="row">
+        <div class="col-8 col-chk">
+          <input
+            type="checkbox"
+            name="{{ item.name }}"
+            (change)="onChange()"
+            [(ngModel)]="item.isselected"
+          >
+        </div>
+        <div class="col-35">
+          <label>{{ item.name }}</label>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <input type="submit" value="submit">
+    </div>
+
+  </div>
+</form>
+
+<table>
+  <tr *ngFor="let item of studentlist; let i = index">
+    <thead *ngIf="i==0">
+      <td style="width: 100px;">id</td>
+      <td style="width: 100px;">name</td>
+      <td style="width: 300px;">courses</td>
+      <td style="width: 100px;">action</td>
+    </thead>
+    <tbody>
+     <td style="width: 100px;">{{item.id}}</td>
+     <td style="width: 100px;">{{item.name}}</td>
+     <td style="width: 300px;">{{item.coursename}}</td>
+     <td style="width: 100px;"><input type="button" value="edit" (click)="edit(item)"></td>
+    </tbody>
+  </tr>
+</table>

@@ -1,0 +1,10 @@
+<p>Parent7Component works!</p>
+<hr>
+
+<div style="text-align: center">
+  <h1> {{title}}</h1>
+</div>
+
+<h1> {{messageFromChild}}</h1>
+
+<app-child7 (childEvent)="messageFromChild=$event" [parentData] = "name"></app-child7>

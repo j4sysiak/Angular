@@ -1,0 +1,39 @@
+<table class="table">
+
+  <thead class="thead-dark">
+  <tr>
+    <th>PolicyId</th>
+    <th>Policy Name</th>
+    <th>Policy Description</th>
+    <th>Policy Created Date</th>
+    <th>Policy Product Name</th>
+    <th>Policy Product Id</th>
+    <th>Update</th>
+    <th>Delete</th>
+  </tr>
+  </thead>
+
+  <tbody>
+<!--  <tr *ngFor="let tmpPolicy of policy">-->
+    <td>{{ policy.policyId }}</td>
+    <td>{{ policy.policyName }}</td>
+    <td>{{ policy.policyDescription }}</td>
+    <td>{{ policy.policyCreatedDate }}</td>
+    <td>{{ policy.productName }}</td>
+    <td>{{ policy.productId }}</td>
+    <td>
+      <button (click)="updatePolicy(policy.policyId)" class="btn btn-success" >
+        Edit
+      </button>
+    </td>
+    <td>
+      <button (click)="deletePolicy(policy.policyId)" class="btn btn-warning" >
+        Delete
+      </button>
+    </td>
+<!--  </tr>-->
+  </tbody>
+
+</table>
+
+

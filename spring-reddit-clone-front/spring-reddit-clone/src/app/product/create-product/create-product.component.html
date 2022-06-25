@@ -1,0 +1,59 @@
+<!--<div class="container">-->
+<!--  <div class="row">-->
+<!--    <div class="create-product-container">-->
+
+<!--      <form class="post-form" [formGroup]="createProductForm" (ngSubmit)="createProduct()">-->
+<!--        <div class="form-group">-->
+<!--          <div class="create-product-heading">Create Product</div>-->
+<!--          <hr />-->
+<!--          <input type="text" [formControlName]="'name'" class="form-control" style="margin-top: 5px"  placeholder="Product Name">-->
+<!--          <div>-->
+<!--            <div style="margin-top: 5px" class="float-right">-->
+<!--              <button (click)="discard()" class="btnDiscard">Discard</button>-->
+<!--              <button class="btnCreateProduct">Create</button>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </form>-->
+
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->
+
+<h3>Add a new Product details</h3>
+<hr>
+
+<div class="container">
+  <div class="row">
+    <div class="create-product-container">
+      <form class=".product-form" #productForm="ngForm" (ngSubmit)="createProduct()">
+
+        <div class="form-group">
+          <label for="name">Product Name</label>
+          <input type="text"
+                 style="margin-top: 5px"
+                 placeholder="Insert Product Name"
+                 class="form-control"
+                 id="name"
+                 #name="ngModel"
+                 name="name"
+                 [(ngModel)]="product.name"
+                 required minlength="3"
+                 maxlength="15">
+        </div>
+
+        <div class="err" *ngIf="name.dirty && name.invalid">
+          <div *ngIf="name.errors['required']">Product name is required</div>
+          <div *ngIf="name.errors['minlength']">Please enter at least 3 letters for Product name</div>
+        </div>
+
+        <div style="margin-top: 5px" class="float-right" >
+          <button (click)="discard()" class="btnDiscard">Discard</button>
+          <button class="btnCreateProduct" [disabled]="productForm.invalid">Create</button>
+          <!--class="btn btn-{{f1.invalid ? 'danger': 'primary'}}" [disabled]="f1.invalid"-->
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+

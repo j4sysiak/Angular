@@ -1,0 +1,21 @@
+<div class="reddit-body">
+  <div class="container">
+    <div class="row">
+      <hr />
+      <div class="col-md-9">
+<!--Wersja 1:        <app-post-tile [posts]="posts"></app-post-tile>-->
+<!--Wersja 2:-->     <app-blog-post-tile></app-blog-post-tile>
+      </div>
+      <div class="col-md-3">
+        <!--Create: BlogPost, Post, Subreddit, Product, Policy-->
+        <app-side-bar></app-side-bar>
+        <!-- Browse Subreddits-->
+        <app-subreddit-side-bar></app-subreddit-side-bar>
+        <!--Browse Products-->
+        <app-product-side-bar></app-product-side-bar>
+        <!--Browse Policies-->
+        <app-policy-side-bar></app-policy-side-bar>
+      </div>
+    </div>
+  </div>
+</div>

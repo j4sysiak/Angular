@@ -1,0 +1,47 @@
+<p>GarageDetailComponent works!</p>
+<hr>
+
+<div class="row">
+  <div class="col-xs-12">
+    <h1>{{ garage.name }}</h1>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-xs-12">
+    {{ garage.description }}
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-xs-12">
+    <ul class="list-group">
+      <li
+        class="list-group-item"
+        *ngFor="let car of garage.cars">
+        {{ car.make }} - {{ car.type }} - {{ car.year }}
+      </li>
+    </ul>
+  </div>
+</div>
+
+<button class="btn btn-default" (click)="onAddToCarList()">To Car List</button>
+
+<div class="row">
+  <div class="col-xs-12">
+    <div
+      class="btn-group"
+      appDropdown>
+      <button
+        type="button"
+        class="btn btn-primary dropdown-toggle">
+        Manage Garage <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu">
+<!--        <li><a style="cursor: pointer;" (click)="onAddToCarList()">To Car List</a></li>-->
+<!--        <li><a style="cursor: pointer;" (click)="onEditRecipe()">Edit Recipe</a></li>-->
+<!--        <li><a style="cursor: pointer;" (click)="onDeleteRecipe()">Delete Recipe</a></li>-->
+      </ul>
+    </div>
+  </div>
+</div>

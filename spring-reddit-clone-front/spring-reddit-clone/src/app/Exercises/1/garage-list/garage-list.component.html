@@ -1,0 +1,18 @@
+<p>GarageListComponent works!</p>
+<hr>
+
+<div class="row">
+  <div class="col-xs-12">
+    <button class="btn btn-success" (click)="onNewGarage()">New Garage</button>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-xs-12">
+    <app-garage-item
+      *ngFor="let garageElement of garages; let i = index"
+      [garage] = "garageElement"
+      [index]="i"
+    ></app-garage-item>
+  </div>
+</div>

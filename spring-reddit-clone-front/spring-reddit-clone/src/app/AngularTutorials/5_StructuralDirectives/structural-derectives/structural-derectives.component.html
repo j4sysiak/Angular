@@ -1,0 +1,29 @@
+<p>structural-derectives works!</p>
+<hr>
+
+<!--<h2 *ngIf="displayName ; else elseBlock">-->
+<!--  Welkomen!!!-->
+<!--</h2>-->
+
+<!--<ng-template #elseBlock>-->
+<!--  <h2>-->
+<!--    Name is hidden-->
+<!--  </h2>-->
+<!--</ng-template>-->
+
+
+<hr>
+
+<div *ngIf="displayName; then thenBlock; else elseBlock"></div>
+
+<ng-template #thenBlock>
+  <h2>Jacek</h2>
+</ng-template>
+
+<ng-template #elseBlock>
+  <h2>IS HIDDEN!!!</h2>
+</ng-template>
+
+
+
+

@@ -1,0 +1,9 @@
+<p>template-reference-variables works!</p>
+<hr>
+<h2>{{name}}</h2>
+<h2>Welkomen!!! {{ name }}</h2>
+<input #myInput1 type="text">
+<button (click)="logMessage1(myInput1.value)">Log1</button>
+<hr>
+<input #myInput2 type="text">
+<button (click)="logMessage2(myInput2)">Log2</button>

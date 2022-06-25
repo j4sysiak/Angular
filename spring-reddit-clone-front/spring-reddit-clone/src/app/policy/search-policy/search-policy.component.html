@@ -1,0 +1,13 @@
+<div>
+  <input #myInput
+         type="text"
+         placeholder="Wyszukaj polisę"
+         class="au-input au-input-xl"
+         (key.enter)="doSearch(myInput.value)" />
+  <button (click)="doSearch(myInput.value)" class="au-btn-submit" type="submit" >Wyszukaj polisę</button>
+</div>
+
+
+
+
+

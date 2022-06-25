@@ -1,0 +1,20 @@
+<!-- Display Blog-Posts-->
+<div style="color: black; font-weight: bold">Display Blog-Posts</div>
+<div class="content">
+  <div class="container">
+    <div class="row" *ngFor="let blogPost of blogPosts | async">
+      <div class="blogpost">
+        <h3><a href="/post/{{blogPost.id}}" class="blog-title">{{blogPost.title}}</a></h3>
+        <div>
+          <i class="fas fa-user"></i> Author: <p>{{blogPost.username}}</p>
+        </div>
+        <p [innerHTML]="blogPost.content"></p>
+        <div>
+          <a type="button" href="/view-blog-post/{{blogPost.id}}" class="read-more btn btn-default">Read More</a>
+        </div>
+        <hr>
+      </div>
+      <hr>
+    </div>
+  </div>
+</div>

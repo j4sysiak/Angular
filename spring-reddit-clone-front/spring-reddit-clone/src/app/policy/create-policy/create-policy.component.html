@@ -1,0 +1,71 @@
+<h3>Add a new Policy details</h3>
+<hr>
+
+<div class="container">
+  <div class="row">
+    <div class="create-policy-container">
+      <form class=".policy-form" #policyForm="ngForm" (ngSubmit)="createPolicy()">
+
+        <div class="form-group">
+          <label for="policyName">Policy Name</label>
+          <input type="text"
+                 style="margin-top: 5px"
+                 placeholder="Insert Policy Name"
+                 class="form-control"
+                 id="policyName"
+                 #policyName="ngModel"
+                 name="policyName"
+                 [(ngModel)]="policy.policyName"
+                 required minlength="3"
+                 maxlength="15"
+          >
+          <div class="err" *ngIf="policyName.dirty && policyName.invalid">
+            <div *ngIf="policyName.errors['required']">Policy Name is required</div>
+            <div *ngIf="policyName.errors['minlength']">Please enter at least 3 letters for Policy Name</div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="productName">Policy Product Name</label>
+          <select
+            class="form-control"
+            style="margin-top: 10px"
+            id="productName"
+            #productName="ngModel"
+            name="productName"
+            [(ngModel)]="policy.productName"
+          >
+            <option value="" selected disabled>Select Product</option>
+            <option *ngFor="let product of products">{{product.name}}</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="policyDescription">Policy Description</label>
+          <editor
+            id="policyDescription"
+            #policyDescription="ngModel"
+            name="policyDescription"
+            [(ngModel)]="policy.policyDescription" [init]="{
+                        height: 250,
+                        menubar: false,
+                        plugins: [
+                          'advlist autolink lists link image charmap print preview anchor',
+                          'searchreplace visualblocks code fullscreen',
+                          'insertdatetime media table paste code help wordcount'
+                        ],
+                        toolbar:
+                          'undo redo | formatselect | bold italic backcolor | \
+                          alignleft aligncenter alignright alignjustify | \
+                          bullist numlist outdent indent | removeformat | help'}">
+          </editor>
+        </div>
+
+        <div style="margin-top: 5px" class="float-right" >
+          <button (click)="discard()" class="btnDiscard">Discard</button>
+          <button class="btnCreatePolicy" [disabled]="policyForm.invalid">Create</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,20 @@
+<p>CarComponent works!</p>
+<hr>
+
+<div class="row">
+  <div class="col-xs-10">
+    <app-car-edit></app-car-edit>
+    <hr>
+    <ul class="list-group">
+      <a
+        class="list-group-item"
+        style="cursor: pointer"
+        *ngFor="let car of cars; let i=index"
+        (click)="onEditItem(i)"
+      >
+        {{car.make}} , {{car.type}} , {{ car.year }}
+      </a>
+    </ul>
+  </div>
+</div>
+
