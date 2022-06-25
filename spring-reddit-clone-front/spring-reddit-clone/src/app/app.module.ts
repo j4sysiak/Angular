@@ -148,16 +148,10 @@ import { Child7Component } from './AngularTutorials/AngularTutorialForBeginers_C
 import { CarComponent } from './Exercises/1/car/car.component';
 import { CarEditComponent } from './Exercises/1/car-edit/car-edit.component';
 import { GarageHeaderComponent } from './Exercises/1/garage-header/garage-header.component';
-import { GarageComponent } from './Exercises/1/garage/garage.component';
-import { GarageListComponent } from './Exercises/1/garage-list/garage-list.component';
-import { GarageStartComponent } from './Exercises/1/garage-start/garage-start.component';
-import { GarageEditComponent } from './Exercises/1/garage-edit/garage-edit.component';
-import { GarageModule } from './Exercises/1/shared/garage.module';
-import { GarageItemComponent } from './Exercises/1/garage-item/garage-item.component';
-import { GarageDetailComponent } from './Exercises/1/garage-detail/garage-detail.component';
 import { InputDataComponent } from './AngularTutorials/input-data/input-data.component';
 import { InputDataWe2Component } from './AngularTutorials/input-data-we2/input-data-we2.component';
 import { NoteItNgAppComponent } from './NoteItNgApp/note-it-ng-app/note-it-ng-app.component';
+import { NavigationComponent } from './NoteItNgApp/note-it-ng-app/navigation/navigation.component';
 
 @NgModule({
   declarations: [
@@ -288,7 +282,9 @@ import { NoteItNgAppComponent } from './NoteItNgApp/note-it-ng-app/note-it-ng-ap
 
     InputDataWe2Component,
 
-    NoteItNgAppComponent
+    NoteItNgAppComponent,
+
+    NavigationComponent
 
     // Ng4AuthComponent
   ],
