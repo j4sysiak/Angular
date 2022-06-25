@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "spring-reddit-clone"
+    }
+  },
+  "defaultProject": "spring-reddit-clone",
+  "cli": {
+    "analytics": "c9f882f1-b349-48c7-8c84-7a6c859041c8"
+  }
 }
