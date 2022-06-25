@@ -157,6 +157,7 @@ import { GarageItemComponent } from './Exercises/1/garage-item/garage-item.compo
 import { GarageDetailComponent } from './Exercises/1/garage-detail/garage-detail.component';
 import { InputDataComponent } from './AngularTutorials/input-data/input-data.component';
 import { InputDataWe2Component } from './AngularTutorials/input-data-we2/input-data-we2.component';
+import { NoteItNgAppComponent } from './NoteItNgApp/note-it-ng-app/note-it-ng-app.component';
 
 @NgModule({
   declarations: [
@@ -285,7 +286,9 @@ import { InputDataWe2Component } from './AngularTutorials/input-data-we2/input-d
 
     InputDataComponent,
 
-    InputDataWe2Component
+    InputDataWe2Component,
+
+    NoteItNgAppComponent
 
     // Ng4AuthComponent
   ],

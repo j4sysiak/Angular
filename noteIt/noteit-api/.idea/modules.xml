@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/NoteIt.iml" filepath="$PROJECT_DIR$/NoteIt.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../noteit-ng-ui/noteit-ng-ui.iml" filepath="$PROJECT_DIR$/../noteit-ng-ui/noteit-ng-ui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/note-it.iml" filepath="$PROJECT_DIR$/note-it.iml" />
     </modules>
   </component>
 </project>

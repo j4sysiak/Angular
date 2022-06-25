@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c1d5bbc9-aef6-4d84-ab50-a3fb273e2626" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/note-it.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/description.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/project-template.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/NoteIt.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/NoteIt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/NoteIt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../noteit-ng-ui/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../noteit-ng-ui/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../noteit-ng-ui/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../noteit-ng-ui/Readme.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../noteit-ng-ui/angular.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../noteit-ng-ui/browserslist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../noteit-ng-ui/e2e/protractor.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../noteit-ng-ui/e2e/src/app.e2e-spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../noteit-ng-ui/e2e/src/app.po.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../noteit-ng-ui/e2e/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../noteit-ng-ui/karma.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../noteit-ng-ui/noteit-ng-ui.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../noteit-ng-ui/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../noteit-ng-ui/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../noteit-ng-ui/src/app/app-routing.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../noteit-ng-ui/src/app/app.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../noteit-ng-ui/src/app/app.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../noteit-ng-ui/src/app/app.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../noteit-ng-ui/src/app/app.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../noteit-ng-ui/src/app/app.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../noteit-ng-ui/src/assets/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../noteit-ng-ui/src/environments/environment.prod.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../noteit-ng-ui/src/environments/environment.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../noteit-ng-ui/src/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../noteit-ng-ui/src/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../noteit-ng-ui/src/main.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../noteit-ng-ui/src/polyfills.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../noteit-ng-ui/src/styles.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../noteit-ng-ui/src/test.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../noteit-ng-ui/tsconfig.app.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../noteit-ng-ui/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../noteit-ng-ui/tsconfig.spec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../noteit-ng-ui/tslint.json" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2B3iV20IaQ5QfleuSAczCNPLe51" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="untitled104" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="untitled104" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="untitled104" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="untitled104" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="untitled104" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="company" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+    <option name="showVisibilityIcons" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RunManager" selected="Application.NoteIt (1)">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.Main" />
+      <module name="NoteIt" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NoteIt" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.java.com.NoteIt" />
+      <module name="NoteIt" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.java.com.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NoteIt" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.NoteIt" />
+      <module name="note-it" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="NoteIt" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="NoteIt" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.NoteIt" />
+      <item itemvalue="Application.NoteIt (1)" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.NoteIt (1)" />
+        <item itemvalue="Application.NoteIt" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c1d5bbc9-aef6-4d84-ab50-a3fb273e2626" name="Changes" comment="" />
+      <created>1656141198593</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1656141198593</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>
