@@ -160,6 +160,7 @@ const appRoutes: Routes = [
 
 
   // aplikacja: NoteIt
+  //https://www.youtube.com/watch?v=YscGmaaEplo&list=PLVApX3evDwJ2keNFsQ4PhA1yVaXpto2oN&index=11
   { path: 'app-note-it-ng-app', component: NotesComponent, pathMatch: 'full'},
   { path: 'notes', component: NotesComponent },
   { path: 'feedback',  component: FeedbackComponent },
