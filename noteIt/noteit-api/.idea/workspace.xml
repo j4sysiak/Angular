@@ -5,10 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c1d5bbc9-aef6-4d84-ab50-a3fb273e2626" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/noteit.db.mv.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/noteit.db.trace.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/rc/noteit/Mapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/rc/noteit/NoteItApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/rc/noteit/api/FeedbackController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/rc/noteit/api/NoteController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/rc/noteit/api/NotebookController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/rc/noteit/api/noteit.http" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/rc/noteit/api/rest-client.env.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/rc/noteit/api/viewmodel/FeedbackViewModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/rc/noteit/api/viewmodel/NoteViewModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/rc/noteit/api/viewmodel/NotebookViewModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/rc/noteit/db/DbSeeder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/rc/noteit/db/NoteRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/rc/noteit/db/NotebookRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/rc/noteit/mail/FeedbackMailSender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/rc/noteit/mail/FeedbackSender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/rc/noteit/model/Note.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/rc/noteit/model/Notebook.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/model/Note.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/model/Note.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/model/Notebook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/model/Notebook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,7 +144,7 @@
       <recent name="com.company.repository" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.NoteItApplication">
+  <component name="RunManager" selected="Application.NoteItApplication (1)">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.company.Main" />
       <module name="NoteIt" />
@@ -142,6 +161,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="main.java.com.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NoteItApplication (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="rc.noteit.NoteItApplication" />
+      <module name="note-it" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="rc.noteit.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -192,9 +224,11 @@
       <item itemvalue="Application.Main" />
       <item itemvalue="Application.NoteIt" />
       <item itemvalue="Application.NoteItApplication" />
+      <item itemvalue="Application.NoteItApplication (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.NoteItApplication (1)" />
         <item itemvalue="Application.NoteItApplication" />
         <item itemvalue="Application.NoteIt" />
       </list>
@@ -216,7 +250,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656229060993</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="26-06-2022 09:37">
+      <created>1656229994428</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1656229994428</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
