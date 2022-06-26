@@ -2,10 +2,12 @@ package com.company;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 
 @SpringBootApplication
-public class NoteIt {
+public class NoteItApplication extends SpringBootServletInitializer {
+
 	public static void main(String[] args) {
-		SpringApplication.run(NoteIt.class, args);
+		SpringApplication.run(NoteItApplication.class, args);
 	}
 }

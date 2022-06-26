@@ -5,13 +5,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c1d5bbc9-aef6-4d84-ab50-a3fb273e2626" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../spring-reddit-clone-front/spring-reddit-clone/src/app/NoteItNgApp/note-it-ng-app/navigation/navigation.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring-reddit-clone-front/spring-reddit-clone/src/app/NoteItNgApp/note-it-ng-app/navigation/navigation.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../spring-reddit-clone-front/spring-reddit-clone/src/app/NoteItNgApp/note-it-ng-app/note-it-ng-app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring-reddit-clone-front/spring-reddit-clone/src/app/NoteItNgApp/note-it-ng-app/note-it-ng-app.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_mail_jakarta_mail_1_6_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_mail_2_6_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_5_3_19.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/Mapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/NoteItApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/api/sadas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/api/viewmodel/NoteViewModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/api/viewmodel/NotebookViewModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/model/Note.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/model/Notebook.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/repository/NotebookRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/note-it.iml" beforeDir="false" afterPath="$PROJECT_DIR$/note-it.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/NoteIt.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/company/NoteIt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring-reddit-clone-front/spring-reddit-clone/src/app/NoteItNgApp/note-it-ng-app/feedback/feedback.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring-reddit-clone-front/spring-reddit-clone/src/app/NoteItNgApp/note-it-ng-app/feedback/feedback.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring-reddit-clone-front/spring-reddit-clone/src/app/NoteItNgApp/note-it-ng-app/feedback/feedback.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring-reddit-clone-front/spring-reddit-clone/src/app/NoteItNgApp/note-it-ng-app/feedback/feedback.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
@@ -101,7 +124,14 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager" selected="Application.NoteIt (1)">
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.company.api.viewmodel" />
+      <recent name="com.company.model" />
+      <recent name="com.company.repository" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.NoteItApplication">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.company.Main" />
       <module name="NoteIt" />
@@ -118,6 +148,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="main.java.com.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NoteItApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.NoteItApplication" />
+      <module name="note-it" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -154,11 +197,11 @@
     <list>
       <item itemvalue="Application.Main" />
       <item itemvalue="Application.NoteIt" />
-      <item itemvalue="Application.NoteIt (1)" />
+      <item itemvalue="Application.NoteItApplication" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.NoteIt (1)" />
+        <item itemvalue="Application.NoteItApplication" />
         <item itemvalue="Application.NoteIt" />
       </list>
     </recent_temporary>
