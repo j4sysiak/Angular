@@ -150,6 +150,9 @@ import { CarEditComponent } from './Exercises/1/car-edit/car-edit.component';
 import { GarageHeaderComponent } from './Exercises/1/garage-header/garage-header.component';
 import { InputDataComponent } from './AngularTutorials/input-data/input-data.component';
 import { InputDataWe2Component } from './AngularTutorials/input-data-we2/input-data-we2.component';
+
+
+//NoteIt application
 import { NoteItNgAppComponent } from './NoteItNgApp/note-it-ng-app/note-it-ng-app.component';
 import { NavigationComponent } from './NoteItNgApp/note-it-ng-app/navigation/navigation.component';
 import { FeedbackComponent } from './NoteItNgApp/note-it-ng-app/feedback/feedback.component';
