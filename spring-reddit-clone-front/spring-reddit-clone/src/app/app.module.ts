@@ -152,6 +152,9 @@ import { InputDataComponent } from './AngularTutorials/input-data/input-data.com
 import { InputDataWe2Component } from './AngularTutorials/input-data-we2/input-data-we2.component';
 import { NoteItNgAppComponent } from './NoteItNgApp/note-it-ng-app/note-it-ng-app.component';
 import { NavigationComponent } from './NoteItNgApp/note-it-ng-app/navigation/navigation.component';
+import { FeedbackComponent } from './NoteItNgApp/note-it-ng-app/feedback/feedback.component';
+import { NotesComponent } from './NoteItNgApp/note-it-ng-app/notes/notes.component';
+import { NotFoundComponent } from './NoteItNgApp/note-it-ng-app/not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -284,7 +287,13 @@ import { NavigationComponent } from './NoteItNgApp/note-it-ng-app/navigation/nav
 
     NoteItNgAppComponent,
 
-    NavigationComponent
+    NavigationComponent,
+
+    FeedbackComponent,
+
+    NotesComponent,
+
+    NotFoundComponent
 
     // Ng4AuthComponent
   ],
