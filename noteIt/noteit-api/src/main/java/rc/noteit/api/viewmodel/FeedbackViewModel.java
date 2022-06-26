@@ -1,9 +1,14 @@
 package rc.noteit.api.viewmodel;
 
+import lombok.Getter;
+import lombok.Setter;
+
 import javax.validation.constraints.Email;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 
+@Setter
+@Getter
 public class FeedbackViewModel {
     @NotNull
     private String name;
@@ -16,27 +21,27 @@ public class FeedbackViewModel {
     @Min(10)
     private String feedback;
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public String getFeedback() {
-        return feedback;
-    }
-
-    public void setFeedback(String feedback) {
-        this.feedback = feedback;
-    }
+//    public String getName() {
+//        return name;
+//    }
+//
+//    public void setName(String name) {
+//        this.name = name;
+//    }
+//
+//    public String getEmail() {
+//        return email;
+//    }
+//
+//    public void setEmail(String email) {
+//        this.email = email;
+//    }
+//
+//    public String getFeedback() {
+//        return feedback;
+//    }
+//
+//    public void setFeedback(String feedback) {
+//        this.feedback = feedback;
+//    }
 }

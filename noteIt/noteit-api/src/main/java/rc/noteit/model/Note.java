@@ -1,5 +1,8 @@
 package rc.noteit.model;
 
+import lombok.Getter;
+import lombok.Setter;
+
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.Id;
@@ -8,6 +11,8 @@ import java.util.Date;
 import java.util.UUID;
 
 @Entity
+@Setter
+@Getter
 public class Note {
     @Id
     private UUID id;
@@ -37,33 +42,33 @@ public class Note {
             this.id = UUID.fromString(id);
         }
     }
-
-
-    public UUID getId() {
-        return id;
-    }
-
-    public String getTitle() {
-        return title;
-    }
-
-    public String getText() {
-        return text;
-    }
-
-    public Notebook getNotebook() {
-        return notebook;
-    }
-
-    public String getNotebookId() {
-        return this.notebook.getId().toString();
-    }
-
-    public Date getLastModifiedOn() {
-        return lastModifiedOn;
-    }
-
-    public void setLastModifiedOn(Date lastModifiedOn) {
-        this.lastModifiedOn = lastModifiedOn;
-    }
+//
+//
+//    public UUID getId() {
+//        return id;
+//    }
+//
+//    public String getTitle() {
+//        return title;
+//    }
+//
+//    public String getText() {
+//        return text;
+//    }
+//
+//    public Notebook getNotebook() {
+//        return notebook;
+//    }
+//
+//    public String getNotebookId() {
+//        return this.notebook.getId().toString();
+//    }
+//
+//    public Date getLastModifiedOn() {
+//        return lastModifiedOn;
+//    }
+//
+//    public void setLastModifiedOn(Date lastModifiedOn) {
+//        this.lastModifiedOn = lastModifiedOn;
+//    }
 }
