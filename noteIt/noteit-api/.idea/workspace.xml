@@ -5,13 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c1d5bbc9-aef6-4d84-ab50-a3fb273e2626" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rc/noteit/api/viewmodel/FeedbackViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rc/noteit/api/viewmodel/FeedbackViewModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rc/noteit/api/viewmodel/NoteViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rc/noteit/api/viewmodel/NoteViewModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rc/noteit/api/viewmodel/NotebookViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rc/noteit/api/viewmodel/NotebookViewModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rc/noteit/model/Note.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rc/noteit/model/Note.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rc/noteit/model/Notebook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rc/noteit/model/Notebook.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -211,14 +205,29 @@
       <option name="project" value="LOCAL" />
       <updated>1656231217986</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="26-06-2022 10:25">
+      <created>1656231939510</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1656231939510</updated>
+    </task>
+    <task id="LOCAL-00006" summary="26-06-2022 10:25">
+      <created>1656231971610</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1656231971610</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="26-06-2022 09:37" />
     <MESSAGE value="26-06-2022 10:06" />
-    <option name="LAST_COMMIT_MESSAGE" value="26-06-2022 10:06" />
+    <MESSAGE value="26-06-2022 10:25" />
+    <option name="LAST_COMMIT_MESSAGE" value="26-06-2022 10:25" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
