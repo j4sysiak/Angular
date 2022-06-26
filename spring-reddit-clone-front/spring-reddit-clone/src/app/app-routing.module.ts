@@ -173,7 +173,12 @@ const appRoutes: Routes = [
 @NgModule({
   // imports: [RouterModule.forRoot(routes)],
   // imports: [RouterModule.forRoot(appRoutes, {useHash: true})],
-  imports: [RouterModule.forRoot(appRoutes, {preloadingStrategy: PreloadAllModules})],
-  exports: [RouterModule]
+  // imports: [RouterModule.forRoot(appRoutes, {preloadingStrategy: PreloadAllModules})],
+  imports: [
+    RouterModule.forRoot(appRoutes, {enableTracing:true})
+  ],
+  exports: [
+    RouterModule
+  ]
 })
 export class AppRoutingModule { }
