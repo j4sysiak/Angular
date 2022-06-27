@@ -18,10 +18,10 @@ export class ApiService {
   constructor(private httpClient: HttpClient) {}
 
   getAllNotebooks() : Observable<Notebook[]> {
-    return null;
+    return this.httpClient.get<Notebook[]>(this.ALL_NOTEBOOKS_URL);
   }
 
   postFeedback(feedbackViewModel: FeedbackViewModel) : Observable<any> {
-    return null;
+    return this.httpClient.post(this.SEND_FEEDBACK_URL, feedbackViewModel);
   }
 }

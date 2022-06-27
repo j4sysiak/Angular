@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {HttpClient} from "@angular/common/http";
 import {Notebook} from "./model/notebook";
+import {ApiService} from "../shared/api.service";
 
 @Component({
   selector: 'app-notes',
@@ -11,20 +11,21 @@ import {Notebook} from "./model/notebook";
 export class NotesComponent implements OnInit {
   notebooks: Notebook[] = [];
 
-  constructor(private httpClient: HttpClient) { }
+  constructor(private apiService: ApiService) { }
 
   ngOnInit(): void {
     this.getAllNotebooks();
   }
 
   public getAllNotebooks() {
-    let url =  "http://localhost:8080/api/notebooks/all";
-    this.httpClient.get<Notebook[]>(url).subscribe(
+    // getting  data from backend
+    // obsługa w service  /shared/api.service.ts
+    this.apiService.getAllNotebooks().subscribe(
       response => {
         this.notebooks = response;
       },
       err => {
-        alert("An error has occured");
+        alert("An error has occurred");
       }
     );
   }
