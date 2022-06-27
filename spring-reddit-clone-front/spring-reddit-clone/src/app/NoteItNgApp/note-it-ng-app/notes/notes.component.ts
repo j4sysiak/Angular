@@ -7,6 +7,7 @@ import {Notebook} from "./model/notebook";
   templateUrl: './notes.component.html',
   styleUrls: ['./notes.component.css']
 })
+
 export class NotesComponent implements OnInit {
   notebooks: Notebook[] = [];
 
