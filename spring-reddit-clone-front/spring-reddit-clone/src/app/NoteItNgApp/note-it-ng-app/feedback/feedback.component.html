@@ -21,9 +21,9 @@
                  [ngClass]="{'is-invalid': f.submitted && name.invalid}"
                  required/>
           <!-- input validation group -->
-          <div *ngIf="f.submitted && name.invalid">
-            <!-- individual validation error &ndash;&gt;-->
-            <div *ngIf="name.errors?.required">Name is not valid</div>
+          <div *ngIf="f.submitted && name.invalid" class="invalid-input">
+            <!-- individual validation error -->
+            <div *ngIf="name.errors?.required">Field is required</div>
           </div>
         </div>
 
@@ -36,7 +36,15 @@
                  name="email"
                  placeholder="Your email"
                  [(ngModel)]="model.email"
-          />
+                 #email="ngModel"
+                 [ngClass]="{'is-invalid': f.submitted && email.invalid}"
+                 required email/>
+          <!-- input validation group -->
+          <div *ngIf="f.submitted && email.invalid" class="invalid-input">
+            <!-- individual validation error -->
+            <div *ngIf="email.errors?.required">Field is required</div>
+            <div *ngIf="email.errors?.email">Field is not a valid email</div>
+          </div>
         </div>
 
         <!-- Feedback -->
@@ -48,8 +56,17 @@
             name="feedback"
             placeholder="Your feedback"
             rows="10"
-            [(ngModel)]="model.feedback">
+            [(ngModel)]="model.feedback"
+            #feedback="ngModel"
+            [ngClass]="{'is-invalid': f.submitted && feedback.invalid}"
+            required minlength="10">
 			    </textarea>
+          <!-- input validation group -->
+          <div *ngIf="f.submitted && feedback.invalid" class="invalid-input">
+            <!-- individual validation error -->
+            <div *ngIf="feedback.errors?.required">Field is required</div>
+            <div *ngIf="feedback.errors?.minlength">Field is too small (try 10 characters)</div>
+          </div>
         </div>
 
         <button type="submit" class="btn btn-info pull-right">
