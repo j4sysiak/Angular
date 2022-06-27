@@ -19,9 +19,13 @@
                  [(ngModel)]="model.name"
                  #name="ngModel"
                  [ngClass]="{'is-invalid': f.submitted && name.invalid}"
-          />
+                 required/>
+          <!-- input validation group -->
+          <div *ngIf="f.submitted && name.invalid">
+            <!-- individual validation error &ndash;&gt;-->
+            <div *ngIf="name.errors?.required">Name is not valid</div>
+          </div>
         </div>
-
 
         <!-- Email -->
         <div class="form-group">
