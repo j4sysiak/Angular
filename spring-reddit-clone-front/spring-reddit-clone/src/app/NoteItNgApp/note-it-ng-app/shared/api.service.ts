@@ -15,6 +15,7 @@ export class ApiService {
   private ALL_NOTEBOOKS_URL =  `${this.BASE_URL}\\notebooks\\all`;
   private SEND_FEEDBACK_URL =  `${this.BASE_URL}\\feedback`;
   private SEND_UPDATE_NOTEBOOK =  `${this.BASE_URL}\\notebooks`;
+  private DELETE_NOTEBOOK_URL =  `${this.BASE_URL}\\notebooks\\`;
 
   constructor(private httpClient: HttpClient) {}
 
@@ -28,5 +29,9 @@ export class ApiService {
 
   postNotebook(notebook: Notebook) : Observable<Notebook> {
     return this.httpClient.post<Notebook>(this.SEND_UPDATE_NOTEBOOK, notebook);
+  }
+
+  deleteNotebook(id: String) : Observable<any> {
+    return this.httpClient.delete(this.DELETE_NOTEBOOK_URL + id);
   }
 }

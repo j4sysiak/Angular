@@ -36,17 +36,39 @@ export class NotesComponent implements OnInit {
       id: null,
       nbOfNotes: 0
     }
-
     this.apiService.postNotebook(newNotebook).subscribe(
       response => {
         newNotebook.id = response.id;
         this.notebooks.push(newNotebook);
       },
       error => {
-        alert("An error has occurred while saving the notebook.");
+        alert("An error has occurred while create the notebook.");
       }
     );
   }
 
+  updateNotebook(updatedNotebook: Notebook) {
+    this.apiService.postNotebook(updatedNotebook).subscribe(
+      response => {
+        //nothing must be done
+      },
+      error => {
+        alert("An error has occurred while update the notebook.");
+      }
+    );
+  }
 
+  deleteNotebook(notebook: Notebook) {
+    if (confirm("Are You sure you want to delete notebook?")) {
+      this.apiService.deleteNotebook(notebook.id).subscribe(
+        response => {
+          let indexOfNotebooks = this.notebooks.indexOf(notebook);
+          this.notebooks.splice(indexOfNotebooks, 1);
+        },
+        error => {
+          alert("Could not delete a notebook.");
+        }
+      );
+    }
+  }
 }
