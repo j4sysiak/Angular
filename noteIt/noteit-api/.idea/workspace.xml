@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c1d5bbc9-aef6-4d84-ab50-a3fb273e2626" name="Changes" comment="" />
+    <list default="true" id="c1d5bbc9-aef6-4d84-ab50-a3fb273e2626" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rc/noteit/api/rest-client.env.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rc/noteit/api/rest-client.env.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -120,13 +123,13 @@
       <recent name="com.company.repository" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="NoteItApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="rc.noteit.NoteItApplication" />
+  <component name="RunManager" selected="Application.NoteItApplication">
+    <configuration name="NoteIt" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.NoteIt" />
       <module name="note-it" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="rc.noteit.*" />
+          <option name="PATTERN" value="com.company.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -134,12 +137,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NoteIt" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.NoteIt" />
+    <configuration name="NoteItApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="rc.noteit.NoteItApplication" />
       <module name="note-it" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.company.*" />
+          <option name="PATTERN" value="rc.noteit.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -163,6 +166,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.NoteItApplication" />
+        <item itemvalue="Application.NoteIt" />
       </list>
     </recent_temporary>
   </component>
@@ -246,6 +250,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/rc/noteit/api/FeedbackController.java</url>
           <line>31</line>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/rc/noteit/api/NotebookController.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

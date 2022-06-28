@@ -13,6 +13,7 @@
     </div>
       <div class="col-md-4">
             <button type="buton"
+                    (click)="createNotebook()"
                     class="btn btn-info pull-right"
                     style="margin-left:12px;"><i class="fa fa-plus"></i> New notebook
             </button>
@@ -29,7 +30,13 @@
     <div class="col-md-3">
       <br>
       <div class="list-group list-group-flush">
+        <a class="list-group-item list-group-item-action">
+          <i class="fa fa-book"></i>&nbsp;All
+        </a>
         <!-- Notebook List -->
+        <a *ngFor="let notebook of notebooks" class="list-group-item list-group-item-action">
+          <i class="fa fa-book"></i>&nbsp;{{notebook.name}}
+        </a>
       </div>
     </div>
 

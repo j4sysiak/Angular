@@ -29,4 +29,24 @@ export class NotesComponent implements OnInit {
       }
     );
   }
+
+  createNotebook() {
+    let newNotebook : Notebook = {
+      name: 'New notebook',
+      id: null,
+      nbOfNotes: 0
+    }
+
+    this.apiService.postNotebook(newNotebook).subscribe(
+      response => {
+        newNotebook.id = response.id;
+        this.notebooks.push(newNotebook);
+      },
+      error => {
+        alert("An error has occurred while saving the notebook.");
+      }
+    );
+  }
+
+
 }
