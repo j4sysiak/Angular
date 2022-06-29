@@ -87,12 +87,18 @@ export class NotesComponent implements OnInit {
      );
   }
 
-  getNotesByNotebook() {
-
-  }
-
   deleteNote(note: Note) {
-
+    if (confirm("Are You sure You want to delete this note?")) {
+      this.apiService.deleteNote(note.id).subscribe(
+        response => {
+          let indexOfNote = this.notes.indexOf(note);
+          this.notes.splice(indexOfNote, 1);
+        },
+        error => {
+          alert("An error has occurred while deleting a note.");
+        }
+      );
+    }
   }
 
   createNote(notebookId: string) {
@@ -126,6 +132,22 @@ export class NotesComponent implements OnInit {
         alert("An error has occurred while grabing all the notes for this notebook only.");
       }
     );
+  }
+
+  updateNote(updatedNote: Note) {
+    this.apiService.saveNotes(updatedNote).subscribe(
+      response => {
+
+      },
+      error => {
+        alert("An error has occurred while updating a note.");
+      }
+    );
+  }
+
+  selectAllNotes() {
+    this.selectedNotebook = null;
+    this.getAllNotes();
   }
 }
 

@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c1d5bbc9-aef6-4d84-ab50-a3fb273e2626" name="Changes" comment="" />
+    <list default="true" id="c1d5bbc9-aef6-4d84-ab50-a3fb273e2626" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Readme.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring-reddit-clone-front/spring-reddit-clone/src/app/NoteItNgApp/note-it-ng-app/notes/notes.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring-reddit-clone-front/spring-reddit-clone/src/app/NoteItNgApp/note-it-ng-app/notes/notes.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring-reddit-clone-front/spring-reddit-clone/src/app/NoteItNgApp/note-it-ng-app/notes/notes.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring-reddit-clone-front/spring-reddit-clone/src/app/NoteItNgApp/note-it-ng-app/notes/notes.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring-reddit-clone-front/spring-reddit-clone/src/app/NoteItNgApp/note-it-ng-app/shared/api.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring-reddit-clone-front/spring-reddit-clone/src/app/NoteItNgApp/note-it-ng-app/shared/api.service.ts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -225,7 +232,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656232017054</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="26-06-2022 10:25">
+      <created>1656481866569</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1656481866569</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -239,16 +253,6 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-jpa/2.6.4/spring-data-jpa-2.6.4.jar!/org/springframework/data/jpa/repository/support/SimpleJpaRepository.class</url>
-          <line>104</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/rc/noteit/api/NoteController.java</url>
-          <line>80</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/rc/noteit/Mapper.java</url>
           <line>54</line>
           <option name="timeStamp" value="10" />
@@ -257,6 +261,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/rc/noteit/api/NoteController.java</url>
           <line>63</line>
           <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/rc/noteit/api/NoteController.java</url>
+          <line>94</line>
+          <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
