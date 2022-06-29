@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Notebook} from "./model/notebook";
 import {ApiService} from "../shared/api.service";
+import {Note} from "./model/note";
 
 @Component({
   selector: 'app-notes',
@@ -10,11 +11,14 @@ import {ApiService} from "../shared/api.service";
 
 export class NotesComponent implements OnInit {
   notebooks: Notebook[] = [];
+  notes: Note[] = [];
+  selectedNotebook: Notebook;
 
   constructor(private apiService: ApiService) { }
 
   ngOnInit(): void {
     this.getAllNotebooks();
+    this.getAllNotes();
   }
 
   public getAllNotebooks() {
@@ -70,5 +74,48 @@ export class NotesComponent implements OnInit {
         }
       );
     }
+  }
+
+  getAllNotes() {
+     this.apiService.getAllNotes().subscribe(
+       response => {
+          this.notes = response;
+       },
+       error => {
+         alert("Error occured while downloading the notes.");
+       }
+     );
+  }
+
+  getNotesByNotebook() {
+
+  }
+
+  deleteNote(note: Note) {
+
+  }
+
+  createNote(notebookId: string) {
+    let newNote : Note = {
+      id: null,
+      title: "New Note",
+      text: "Write some text in here",
+      lastModifiedOn: null,
+      notebookId: notebookId
+    };
+    this.apiService.saveNotes(newNote).subscribe(
+      response => {
+        newNote.id = response.id;
+        this.notes.push(newNote);
+      },
+      error => {
+        alert("An error has occurred while saving a note.");
+      }
+    );
+  }
+
+  selectNotebook(id: string) {
+     this.selectedNotebook = notebook;
+     // TODO: grab all the notes for this notebook only
   }
 }

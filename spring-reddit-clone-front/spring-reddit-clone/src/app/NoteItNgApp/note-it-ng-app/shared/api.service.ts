@@ -3,6 +3,7 @@ import {HttpClient} from "@angular/common/http";
 import {Observable} from "rxjs";
 import {Notebook} from "../notes/model/notebook";
 import {FeedbackViewModel} from "../feedback/FeedbackViewModel";
+import {Note} from "../notes/model/note";
 
 // klas Service to Singleton
 //ta anotacja umożliwia wstrzykiwanie obiektu tej klasy do innych klsa
@@ -16,6 +17,9 @@ export class ApiService {
   private SEND_FEEDBACK_URL =  `${this.BASE_URL}\\feedback`;
   private SEND_UPDATE_NOTEBOOK =  `${this.BASE_URL}\\notebooks`;
   private DELETE_NOTEBOOK_URL =  `${this.BASE_URL}\\notebooks\\`;
+  private ALL_NOTES_URL =  `${this.BASE_URL}\\notes\\all`;
+  private NOTES_BY_NOTEBOOK_URL =  `${this.BASE_URL}\\notes\\byId\\`;
+  private SAVE_UPDATE_NOTE_URL =  `${this.BASE_URL}\\notes`;
 
   constructor(private httpClient: HttpClient) {}
 
@@ -33,5 +37,17 @@ export class ApiService {
 
   deleteNotebook(id: String) : Observable<any> {
     return this.httpClient.delete(this.DELETE_NOTEBOOK_URL + id);
+  }
+
+  getAllNotes(): Observable<Note[]> {
+    return this.httpClient.get<Note[]>(this.ALL_NOTES_URL);
+  }
+
+  getNotesByNotebook(notebookId: string): Observable<Note[]> {
+    return this.httpClient.get<Note[]>(this.NOTES_BY_NOTEBOOK_URL + notebookId);
+  }
+
+  saveNotes(note: Note): Observable<Note> {
+    return this.httpClient.post<Note>(this.SAVE_UPDATE_NOTE_URL, note);
   }
 }
