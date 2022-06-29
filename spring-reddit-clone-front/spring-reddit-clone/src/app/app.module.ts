@@ -158,6 +158,7 @@ import { NavigationComponent } from './NoteItNgApp/note-it-ng-app/navigation/nav
 import { FeedbackComponent } from './NoteItNgApp/note-it-ng-app/feedback/feedback.component';
 import { NotesComponent } from './NoteItNgApp/note-it-ng-app/notes/notes.component';
 import { NotFoundComponent } from './NoteItNgApp/note-it-ng-app/not-found/not-found.component';
+import { NoteComponent } from './NoteItNgApp/note-it-ng-app/notes/note/note.component';
 
 @NgModule({
   declarations: [
@@ -296,7 +297,9 @@ import { NotFoundComponent } from './NoteItNgApp/note-it-ng-app/not-found/not-fo
 
     NotesComponent,
 
-    NotFoundComponent
+    NotFoundComponent,
+
+    NoteComponent
 
     // Ng4AuthComponent
   ],

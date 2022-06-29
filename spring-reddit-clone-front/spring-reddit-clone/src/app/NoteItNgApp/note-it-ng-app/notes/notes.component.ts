@@ -87,6 +87,10 @@ export class NotesComponent implements OnInit {
      );
   }
 
+  getNotesByNotebook() {
+
+  }
+
   deleteNote(note: Note) {
     if (confirm("Are You sure You want to delete this note?")) {
       this.apiService.deleteNote(note.id).subscribe(

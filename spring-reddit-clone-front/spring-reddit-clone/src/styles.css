@@ -43,3 +43,21 @@ input.ng-invalid.ng-touched {
   padding: 3px 16px;
   opacity: 1;
 }
+
+.list-group-item {
+  cursor: pointer;
+}
+
+.input-label {
+  background: rgba(0,0,0,0);
+  border: none;
+  cursor: pointer;
+}
+
+.input-label-lg {
+  background: rgba(0,0,0,0);
+  border: none;
+  cursor: pointer;
+  font-size: large;
+  font-weight: bold;
+}
