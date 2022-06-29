@@ -117,6 +117,42 @@ export class NotesComponent implements OnInit {
   selectNotebook(notebook: Notebook) {
      this.selectedNotebook = notebook;
      console.log(this.selectedNotebook);
-     // TODO: grab all the notes for this notebook only
+     //grab all the notes for this notebook only
+    this.apiService.getNotesByNotebook(notebook.id).subscribe(
+      response => {
+        this.notes = response;
+      },
+      error => {
+        alert("An error has occurred while grabing all the notes for this notebook only.");
+      }
+    );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -18,7 +18,7 @@ export class ApiService {
   private SEND_UPDATE_NOTEBOOK =  `${this.BASE_URL}\\notebooks`;
   private DELETE_NOTEBOOK_URL =  `${this.BASE_URL}\\notebooks\\`;
   private ALL_NOTES_URL =  `${this.BASE_URL}\\notes\\all`;
-  private NOTES_BY_NOTEBOOK_URL =  `${this.BASE_URL}\\notes\\byId\\`;
+  private NOTES_BY_NOTEBOOK_URL =  `${this.BASE_URL}\\notes\\byNotebook\\`;
   private SAVE_UPDATE_NOTE_URL =  `${this.BASE_URL}\\notes`;
 
   constructor(private httpClient: HttpClient) {}
