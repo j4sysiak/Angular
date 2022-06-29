@@ -114,8 +114,9 @@ export class NotesComponent implements OnInit {
     );
   }
 
-  selectNotebook(id: string) {
+  selectNotebook(notebook: Notebook) {
      this.selectedNotebook = notebook;
+     console.log(this.selectedNotebook);
      // TODO: grab all the notes for this notebook only
   }
 }

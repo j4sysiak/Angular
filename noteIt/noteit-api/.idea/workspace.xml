@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c1d5bbc9-aef6-4d84-ab50-a3fb273e2626" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../spring-reddit-clone-front/spring-reddit-clone/src/app/NoteItNgApp/note-it-ng-app/notes/model/note.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../spring-reddit-clone-front/spring-reddit-clone/src/app/NoteItNgApp/note-it-ng-app/notes/notes.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring-reddit-clone-front/spring-reddit-clone/src/app/NoteItNgApp/note-it-ng-app/notes/notes.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../spring-reddit-clone-front/spring-reddit-clone/src/app/NoteItNgApp/note-it-ng-app/notes/notes.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring-reddit-clone-front/spring-reddit-clone/src/app/NoteItNgApp/note-it-ng-app/notes/notes.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../spring-reddit-clone-front/spring-reddit-clone/src/app/NoteItNgApp/note-it-ng-app/shared/api.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring-reddit-clone-front/spring-reddit-clone/src/app/NoteItNgApp/note-it-ng-app/shared/api.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -245,29 +243,24 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/rc/noteit/api/FeedbackController.java</url>
-          <line>27</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/rc/noteit/api/FeedbackController.java</url>
-          <line>31</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/rc/noteit/api/NotebookController.java</url>
-          <line>32</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/rc/noteit/api/NotebookController.java</url>
-          <line>53</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-jpa/2.6.4/spring-data-jpa-2.6.4.jar!/org/springframework/data/jpa/repository/support/SimpleJpaRepository.class</url>
           <line>104</line>
           <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/rc/noteit/api/NotebookController.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/rc/noteit/api/NoteController.java</url>
+          <line>80</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/rc/noteit/Mapper.java</url>
+          <line>54</line>
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

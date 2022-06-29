@@ -19,7 +19,8 @@
                     style="margin-left:12px;"><i class="glyphicon glyphicon-plus"></i> New notebook
             </button>
             <button type="button"
-                    (click)="createNote('empty')"
+                    (click)="createNote(selectedNotebook.id)"
+                    [disabled]="selectedNotebook == null"
                     class="btn btn-warning pull-right"
                     style="margin-left:12px;"><i class="glyphicon glyphicon-plus"></i> New note
             </button>
@@ -32,11 +33,11 @@
     <div class="col-md-3">
       <br>
       <div class="list-group list-group-flush">
-        <a class="list-group-item list-group-item-action">
+        <a (click)="selectedNotebook = null" class="list-group-item list-group-item-action">
           <i class="fa fa-book"></i>&nbsp;All
         </a>
         <!-- Notebook List -->
-        <a *ngFor="let notebook of notebooks" (click)="selectNotebook1(selectedNotebook.id)" class="list-group-item list-group-item-action">
+        <a *ngFor="let notebook of notebooks" (click)="selectNotebook(notebook)" class="list-group-item list-group-item-action">
           <input [(ngModel)]="notebook.name" (change)="updateNotebook(notebook)" type="text" class="input-label" style="width: 80%"/>
           <a (click)="deleteNotebook(notebook)" class="pull-right text-danger">
             <i class="glyphicon glyphicon-trash"></i>
