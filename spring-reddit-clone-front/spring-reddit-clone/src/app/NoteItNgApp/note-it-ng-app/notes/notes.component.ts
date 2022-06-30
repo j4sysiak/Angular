@@ -141,7 +141,6 @@ export class NotesComponent implements OnInit {
   updateNote(updatedNote: Note) {
     this.apiService.saveNotes(updatedNote).subscribe(
       response => {
-
       },
       error => {
         alert("An error has occurred while updating a note.");

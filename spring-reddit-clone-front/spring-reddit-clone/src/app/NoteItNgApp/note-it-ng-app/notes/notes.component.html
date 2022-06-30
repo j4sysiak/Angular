@@ -59,8 +59,40 @@
       </div>
       <div class="row">
         <!-- Note list -->
-        <app-note *ngFor="let note of notes"></app-note>
+        <!-- passing note object to the child component Note-->
+        <!-- object passingNote will be passing to Note Component-->
+        <!-- [passedNote] - this is the name of property in child component Note-->
+        <!-- dzięki temu, że w klasie child Note zrobiliśmy na @Output dwa emittery, to tutaj bedą widoczne: noteUpdatedTrigger, noteDeletedTrigger-->
+        <!-- to uruchomi odpowiedzie metody updateNote i deleteNote z parametrem przekazanym przez child $event tj. note: Note-->
+        <app-note *ngFor="let passingNote of notes"
+                  [passedNote]="passingNote"
+                  (noteUpdatedTrigger)="updateNote($event)"
+                  (noteDeletedTrigger)="deleteNote($event)">
+        </app-note>
       </div>
     </div>
   </div>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

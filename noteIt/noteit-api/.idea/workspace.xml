@@ -5,11 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c1d5bbc9-aef6-4d84-ab50-a3fb273e2626" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring-reddit-clone-front/spring-reddit-clone/src/app/AngularTutorials/PassingDataFromParentToChildAndBackUsingEventEmitter.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring-reddit-clone-front/spring-reddit-clone/src/app/NoteItNgApp/note-it-ng-app/notes/note/note.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring-reddit-clone-front/spring-reddit-clone/src/app/NoteItNgApp/note-it-ng-app/notes/note/note.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../spring-reddit-clone-front/spring-reddit-clone/src/app/NoteItNgApp/note-it-ng-app/notes/note/note.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring-reddit-clone-front/spring-reddit-clone/src/app/NoteItNgApp/note-it-ng-app/notes/note/note.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../spring-reddit-clone-front/spring-reddit-clone/src/app/NoteItNgApp/note-it-ng-app/notes/notes.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring-reddit-clone-front/spring-reddit-clone/src/app/NoteItNgApp/note-it-ng-app/notes/notes.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../spring-reddit-clone-front/spring-reddit-clone/src/app/NoteItNgApp/note-it-ng-app/notes/notes.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring-reddit-clone-front/spring-reddit-clone/src/app/NoteItNgApp/note-it-ng-app/notes/notes.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../spring-reddit-clone-front/spring-reddit-clone/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring-reddit-clone-front/spring-reddit-clone/src/app/app.module.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -247,26 +247,5 @@
     <MESSAGE value="26-06-2022 10:06" />
     <MESSAGE value="26-06-2022 10:25" />
     <option name="LAST_COMMIT_MESSAGE" value="26-06-2022 10:25" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/rc/noteit/Mapper.java</url>
-          <line>54</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/rc/noteit/api/NoteController.java</url>
-          <line>63</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/rc/noteit/api/NoteController.java</url>
-          <line>94</line>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
