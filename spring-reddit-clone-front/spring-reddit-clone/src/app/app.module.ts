@@ -159,6 +159,7 @@ import { FeedbackComponent } from './NoteItNgApp/note-it-ng-app/feedback/feedbac
 import { NotesComponent } from './NoteItNgApp/note-it-ng-app/notes/notes.component';
 import { NotFoundComponent } from './NoteItNgApp/note-it-ng-app/not-found/not-found.component';
 import { NoteComponent } from './NoteItNgApp/note-it-ng-app/notes/note/note.component';
+import { NoteTextFilterPipe } from './NoteItNgApp/note-it-ng-app/shared/note-text-filter.pipe';
 
 @NgModule({
   declarations: [
@@ -299,7 +300,9 @@ import { NoteComponent } from './NoteItNgApp/note-it-ng-app/notes/note/note.comp
 
     NotFoundComponent,
 
-    NoteComponent
+    NoteComponent,
+
+    NoteTextFilterPipe
 
     // Ng4AuthComponent
   ],
