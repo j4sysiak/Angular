@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ListPolicyComponent } from './list-policy.component';
+import { TttComponent } from './ttt.component';
 
-describe('ListPolicyComponent', () => {
-  let component: ListPolicyComponent;
-  let fixture: ComponentFixture<ListPolicyComponent>;
+describe('TttComponent', () => {
+  let component: TttComponent;
+  let fixture: ComponentFixture<TttComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ListPolicyComponent ]
+      declarations: [ TttComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ListPolicyComponent);
+    fixture = TestBed.createComponent(TttComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

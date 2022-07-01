@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c1d5bbc9-aef6-4d84-ab50-a3fb273e2626" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../spring-reddit-clone-front/spring-reddit-clone/src/app/NoteItNgApp/note-it-ng-app/notes/notes.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring-reddit-clone-front/spring-reddit-clone/src/app/NoteItNgApp/note-it-ng-app/notes/notes.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../spring-reddit-clone-front/spring-reddit-clone/src/app/NoteItNgApp/note-it-ng-app/notes/notes.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring-reddit-clone-front/spring-reddit-clone/src/app/NoteItNgApp/note-it-ng-app/notes/notes.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

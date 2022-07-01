@@ -160,6 +160,7 @@ import { NotesComponent } from './NoteItNgApp/note-it-ng-app/notes/notes.compone
 import { NotFoundComponent } from './NoteItNgApp/note-it-ng-app/not-found/not-found.component';
 import { NoteComponent } from './NoteItNgApp/note-it-ng-app/notes/note/note.component';
 import { NoteTextFilterPipe } from './NoteItNgApp/note-it-ng-app/shared/note-text-filter.pipe';
+import { TttComponent } from './NoteItNgApp/note-it-ng-app/shared/ttt/ttt.component';
 
 @NgModule({
   declarations: [
@@ -302,7 +303,9 @@ import { NoteTextFilterPipe } from './NoteItNgApp/note-it-ng-app/shared/note-tex
 
     NoteComponent,
 
-    NoteTextFilterPipe
+    NoteTextFilterPipe,
+
+    TttComponent
 
     // Ng4AuthComponent
   ],
