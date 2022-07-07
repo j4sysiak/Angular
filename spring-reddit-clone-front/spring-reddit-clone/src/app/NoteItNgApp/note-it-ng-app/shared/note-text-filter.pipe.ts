@@ -6,6 +6,7 @@ import {Note} from "../notes/model/note";
 })
 export class NoteTextFilterPipe implements PipeTransform {
 
+  // to będziemy testować (tą metodę)
   transform(notes: Note[], text: string): Note[] {
     if (text == null || text === "") {
       return notes;

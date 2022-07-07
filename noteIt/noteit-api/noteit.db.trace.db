@@ -1,4 +1,0 @@
-2022-06-26 10:00:25 jdbc[3]: exception
-org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabela "NOTEBOOK" nie istnieje
-Table "NOTEBOOK" not found; SQL statement:
-select notebook0_.id as id1_1_, notebook0_.name as name2_1_ from notebook notebook0_ [42102-200]

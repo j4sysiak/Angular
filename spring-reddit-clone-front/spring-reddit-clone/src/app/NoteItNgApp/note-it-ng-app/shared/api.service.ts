@@ -13,7 +13,7 @@ import {Note} from "../notes/model/note";
 })
 export class ApiService {
   private BASE_URL = "http://localhost:8080/api";
-  public ALL_NOTEBOOKS_URL =  `${this.BASE_URL}\\notebooks\\all`; // public na potrzeby testów:  api.service.spec.ts
+  public  ALL_NOTEBOOKS_URL =  `${this.BASE_URL}\\notebooks\\all`; // public na potrzeby testów:  api.service.spec.ts
   private SEND_FEEDBACK_URL =  `${this.BASE_URL}\\feedback`;
   private SEND_UPDATE_NOTEBOOK =  `${this.BASE_URL}\\notebooks`;
   private DELETE_NOTEBOOK_URL =  `${this.BASE_URL}\\notebooks\\`;
