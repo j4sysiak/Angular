@@ -93,7 +93,7 @@ import { AssignmentSolutionSekcja152ReactiveFormsComponent } from './AngularTheC
 import { AssignmentSolutionSekcja17PipesComponent } from './AngularTheCompleteGuide/assignment-solution-sekcja17-pipes/assignment-solution-sekcja17-pipes.component';
 import { AssignmentSolutionSekcja9ServicesComponent } from './AngularTheCompleteGuide/assignment-solution-sekcja9-services/assignment-solution-sekcja9-services.component';
 import { AssignmentSolutionSekcja18HttpComponent } from './AngularTheCompleteGuide/assignment-solution-sekcja18-http/assignment-solution-sekcja18-http.component';
-// tslint:disable-next-line:max-line-length
+
 import { Ng4AuthInterceptorService } from './AngularTheCompleteGuide/ng4-complete-guide/ng4-auth/ng4-auth-interceptor.service';
 import { AuthInterceptorService } from './AngularTheCompleteGuide/assignment-solution-sekcja18-http/auth-interceptor.service';
 import { LoggingInterceptorService } from './AngularTheCompleteGuide/assignment-solution-sekcja18-http/logging-interceptor.service';
@@ -160,6 +160,9 @@ import { NotesComponent } from './NoteItNgApp/note-it-ng-app/notes/notes.compone
 import { NotFoundComponent } from './NoteItNgApp/note-it-ng-app/not-found/not-found.component';
 import { NoteComponent } from './NoteItNgApp/note-it-ng-app/notes/note/note.component';
 import { NoteTextFilterPipe } from './NoteItNgApp/note-it-ng-app/shared/note-text-filter.pipe';
+
+//ReactiveFormValidationSmoothScrollingComponent
+import { ReactiveFormValidationSmoothScrollingComponent } from './AngularTutorials/ReactiveFormValidationSmoothScrolling/reactive-form-validation-smooth-scrolling/reactive-form-validation-smooth-scrolling.component';
 
 @NgModule({
   declarations: [
@@ -302,7 +305,9 @@ import { NoteTextFilterPipe } from './NoteItNgApp/note-it-ng-app/shared/note-tex
 
     NoteComponent,
 
-    NoteTextFilterPipe
+    NoteTextFilterPipe,
+
+    ReactiveFormValidationSmoothScrollingComponent
 
     // Ng4AuthComponent
   ],
