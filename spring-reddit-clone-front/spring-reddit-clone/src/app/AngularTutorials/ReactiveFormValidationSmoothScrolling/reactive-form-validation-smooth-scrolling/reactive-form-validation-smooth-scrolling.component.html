@@ -1,106 +1,108 @@
-<html lang="en">
+<!--<html lang="en">-->
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-</head>
+<!--<head>-->
+<!--  <meta charset="UTF-8">-->
+<!--  <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<!--  <meta http-equiv="X-UA-Compatible" content="ie=edge">-->
+<!--  <title>Document</title>-->
+<!--</head>-->
 
-<body>
-<div class="container">
-  <div class="row py-5 justify-content-center">
-    <div class="col-md-8">
+<!--<body>-->
+<!--<div class="container">-->
+<!--  <div class="row py-5 justify-content-center">-->
+<!--    <div class="col-md-8">-->
 
-      <h1 class="text-center py-4">SIGN UP</h1>
+<!--      <h1 class="text-center py-4">SIGN UP</h1>-->
 
       <form [formGroup]="signUpForm" (ngSubmit)="onSubmit()" novalidate>
         <div class="form-group">
           <label for="firstname">First Name</label>
-          <input type="text" class="form-control" id="firstname" formControlName="firstname"
+          <input type="text"
+                 id="firstname"
+                 formControlName="firstname"
                  placeholder="Enter first name" [ngClass]="{ 'is-invalid': submitted && f.firstname.errors }" required>
-          <div *ngIf="submitted && f.firstname.errors" class="invalid-feedback">
+          <div *ngIf="submitted && f.firstname.errors" >
             <div *ngIf="f.firstname.errors.required">
               Please provide a first name.
             </div>
           </div>
         </div>
 
-        <div class="form-group">
-          <label for="firstname">Last Name</label>
-          <input type="text" class="form-control" id="lastname" formControlName="lastname"
-                 placeholder="Enter last name" [ngClass]="{ 'is-invalid': submitted && f.lastname.errors }" required>
-          <div *ngIf="submitted && f.lastname.errors" class="invalid-feedback">
-            <div *ngIf="f.lastname.errors.required">
-              Please provide a last name.
-            </div>
-          </div>
-        </div>
+<!--        <div class="form-group">-->
+<!--          <label for="firstname">Last Name</label>-->
+<!--          <input type="text" class="form-control" id="lastname" formControlName="lastname"-->
+<!--                 placeholder="Enter last name" [ngClass]="{ 'is-invalid': submitted && f.lastname.errors }" required>-->
+<!--          <div *ngIf="submitted && f.lastname.errors" class="invalid-feedback">-->
+<!--            <div *ngIf="f.lastname.errors.required">-->
+<!--              Please provide a last name.-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
 
-        <div class="form-group">
-          <label for="firstname">Username</label>
-          <input type="text" class="form-control" id="username" formControlName="username"
-                 placeholder="Enter username" [ngClass]="{ 'is-invalid': submitted && f.username.errors }" required>
-          <div *ngIf="submitted && f.username.errors" class="invalid-feedback">
-            <div *ngIf="f.username.errors.required">
-              Please provide a username.
-            </div>
-          </div>
-        </div>
+<!--        <div class="form-group">-->
+<!--          <label for="firstname">Username</label>-->
+<!--          <input type="text" class="form-control" id="username" formControlName="username"-->
+<!--                 placeholder="Enter username" [ngClass]="{ 'is-invalid': submitted && f.username.errors }" required>-->
+<!--          <div *ngIf="submitted && f.username.errors" class="invalid-feedback">-->
+<!--            <div *ngIf="f.username.errors.required">-->
+<!--              Please provide a username.-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
 
-        <div class="form-group">
-          <label for="email">Email address</label>
-          <input type="email" class="form-control" id="email" formControlName="email" placeholder="Enter email"
-                 [ngClass]="{ 'is-invalid': submitted && f.email.errors }" required>
-          <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
-            <div *ngIf="f.email.errors.required">
-              Please provide an email.
-            </div>
-            <div *ngIf="f.email.errors.pattern">
-              Invalid email.
-            </div>
-          </div>
-        </div>
+<!--        <div class="form-group">-->
+<!--          <label for="email">Email address</label>-->
+<!--          <input type="email" class="form-control" id="email" formControlName="email" placeholder="Enter email"-->
+<!--                 [ngClass]="{ 'is-invalid': submitted && f.email.errors }" required>-->
+<!--          <div *ngIf="submitted && f.email.errors" class="invalid-feedback">-->
+<!--            <div *ngIf="f.email.errors.required">-->
+<!--              Please provide an email.-->
+<!--            </div>-->
+<!--            <div *ngIf="f.email.errors.pattern">-->
+<!--              Invalid email.-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
 
-        <div class="form-group">
-          <label for="password">Password</label>
-          <input type="password" class="form-control" id="password" formControlName="password" placeholder="Password"
-                 [ngClass]="{ 'is-invalid': submitted && f.password.errors }" required>
-          <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
-            <div *ngIf="f.password.errors.required">
-              Please provide a password.
-            </div>
-            <div *ngIf="f.password.errors.minlength">
-              Password must be at least 6 characters
-            </div>
-          </div>
-        </div>
+<!--        <div class="form-group">-->
+<!--          <label for="password">Password</label>-->
+<!--          <input type="password" class="form-control" id="password" formControlName="password" placeholder="Password"-->
+<!--                 [ngClass]="{ 'is-invalid': submitted && f.password.errors }" required>-->
+<!--          <div *ngIf="submitted && f.password.errors" class="invalid-feedback">-->
+<!--            <div *ngIf="f.password.errors.required">-->
+<!--              Please provide a password.-->
+<!--            </div>-->
+<!--            <div *ngIf="f.password.errors.minlength">-->
+<!--              Password must be at least 6 characters-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
 
-        <div class="form-group">
-          <label for="password">Confirm Password</label>
-          <input type="password" class="form-control" id="confirmPassword" formControlName="confirmPassword"
-                 placeholder="Confirm password" [ngClass]="{ 'is-invalid': submitted && f.confirmPassword.errors }"
-                 required>
-          <div *ngIf="submitted && f.confirmPassword.errors" class="invalid-feedback">
-            <div *ngIf="f.confirmPassword.errors.required">
-              Please confirm your password.
-            </div>
-            <div *ngIf="f.confirmPassword.errors.mustMatch">
-              Passwords must match.
-            </div>
-          </div>
-        </div>
+<!--        <div class="form-group">-->
+<!--          <label for="password">Confirm Password</label>-->
+<!--          <input type="password" class="form-control" id="confirmPassword" formControlName="confirmPassword"-->
+<!--                 placeholder="Confirm password" [ngClass]="{ 'is-invalid': submitted && f.confirmPassword.errors }"-->
+<!--                 required>-->
+<!--          <div *ngIf="submitted && f.confirmPassword.errors" class="invalid-feedback">-->
+<!--            <div *ngIf="f.confirmPassword.errors.required">-->
+<!--              Please confirm your password.-->
+<!--            </div>-->
+<!--            <div *ngIf="f.confirmPassword.errors.mustMatch">-->
+<!--              Passwords must match.-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
 
-        <div class="form-group form-check">
-          <input type="checkbox" class="form-check-input" id="check1">
-          <label class="form-check-label" for="check1">Check this checkbox</label>
-        </div>
+<!--        <div class="form-group form-check">-->
+<!--          <input type="checkbox" class="form-check-input" id="check1">-->
+<!--          <label class="form-check-label" for="check1">Check this checkbox</label>-->
+<!--        </div>-->
         <button type="submit" class="btn btn-primary">Submit</button>
       </form>
-    </div>
-  </div>
-</div>
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->
 
-</body>
+<!--</body>-->
 
-</html>
+<!--</html>-->
