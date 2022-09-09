@@ -44,6 +44,7 @@ import {Ng4ShoppingListModule} from './AngularTheCompleteGuide/ng4-complete-guid
 import {FeedbackComponent} from "./NoteItNgApp/note-it-ng-app/feedback/feedback.component";
 import {NotesComponent} from "./NoteItNgApp/note-it-ng-app/notes/notes.component";
 import {NotFoundComponent} from "./NoteItNgApp/note-it-ng-app/not-found/not-found.component";
+import {CreateEmployeeComponent} from "./Angular-To-Docker-Example/employee/create-employee/create-employee.component";
 // import {Ng4RecipesResolverService} from './AngularTheCompleteGuide/ng4-complete-guide/ng4-recipes/ng4-recipes-resolver.service';
 // import {Ng4AuthGuard} from './AngularTheCompleteGuide/ng4-complete-guide/ng4-auth/ng4-auth-guard';
 // tslint:disable-next-line:max-line-length
@@ -164,8 +165,12 @@ const appRoutes: Routes = [
   { path: 'app-note-it-ng-app', component: NotesComponent, pathMatch: 'full'},
   { path: 'notes', component: NotesComponent },
   { path: 'feedback',  component: FeedbackComponent },
-  { path: 'not-found', component: NotFoundComponent, data: {message: 'Page not found!'} }
+  { path: 'not-found', component: NotFoundComponent, data: {message: 'Page not found!'} },
   // { path: '**', component: NotFoundComponent },
+
+  // aplikacja: Angular-To-Docker-Example
+  { path: 'employee-docker', redirectTo: 'employee', pathMatch: 'full' },
+  { path: 'add', component: CreateEmployeeComponent }
   ];
 
 
@@ -182,3 +187,15 @@ const appRoutes: Routes = [
   ]
 })
 export class AppRoutingModule { }
+
+
+
+
+
+
+
+
+
+
+
+

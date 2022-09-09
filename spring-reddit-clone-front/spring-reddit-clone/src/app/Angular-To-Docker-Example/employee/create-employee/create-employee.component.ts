@@ -17,15 +17,15 @@ export class CreateEmployeeComponent implements OnInit {
               ) { }
 
   ngOnInit(): void {
+  }
+
+  onSubmit() {
     this.submitted=true;
     this.employeeService.createEmployee(this.employee).subscribe(
       data => console.log(data),
       error => console.log(error)
     );
-  }
-
-
-  onSubmit() {
-
+    this.employee=new Employee();
+    this.router.navigate(['/employees']);
   }
 }

@@ -167,6 +167,7 @@ import { AngulatToDockerComponent } from './Angular-To-Docker-Example/angulat-to
 import { CreateEmployeeComponent } from './Angular-To-Docker-Example/employee/create-employee/create-employee.component';
 import { UpdateEmployeeComponent } from './Angular-To-Docker-Example/employee/update-employee/update-employee.component';
 import { EmployeeListComponent } from './Angular-To-Docker-Example/employee/employee-list/employee-list.component';
+import { EmployeeService } from "./Angular-To-Docker-Example/service/employee.service";
 
 @NgModule({
   declarations: [
@@ -354,7 +355,8 @@ import { EmployeeListComponent } from './Angular-To-Docker-Example/employee/empl
               AuthRoutingGuardService,
               CanDeactivateRoutingGuardService,
               ServerRoutingResolverService,
-              ObservablesUserService
+              ObservablesUserService,
+              EmployeeService
 
               // Ng4LoggingService
               // Ng4ShoppingListService,
