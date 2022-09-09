@@ -163,11 +163,11 @@ import { NoteTextFilterPipe } from './NoteItNgApp/note-it-ng-app/shared/note-tex
 
 //ReactiveFormValidationSmoothScrollingComponent
 import { ReactiveFormValidationSmoothScrollingComponent } from './AngularTutorials/ReactiveFormValidationSmoothScrolling/reactive-form-validation-smooth-scrolling/reactive-form-validation-smooth-scrolling.component';
-import { AngulatToDockerComponent } from './Angular-To-Docker-Example/angulat-to-docker.component';
 import { CreateEmployeeComponent } from './Angular-To-Docker-Example/employee/create-employee/create-employee.component';
 import { UpdateEmployeeComponent } from './Angular-To-Docker-Example/employee/update-employee/update-employee.component';
 import { EmployeeListComponent } from './Angular-To-Docker-Example/employee/employee-list/employee-list.component';
 import { EmployeeService } from "./Angular-To-Docker-Example/service/employee.service";
+import { AngularToDockerComponent } from "./Angular-To-Docker-Example/angular-to-docker.component";
 
 @NgModule({
   declarations: [
@@ -314,7 +314,7 @@ import { EmployeeService } from "./Angular-To-Docker-Example/service/employee.se
 
     ReactiveFormValidationSmoothScrollingComponent,
 
-    AngulatToDockerComponent,
+    AngularToDockerComponent,
 
     CreateEmployeeComponent,
 

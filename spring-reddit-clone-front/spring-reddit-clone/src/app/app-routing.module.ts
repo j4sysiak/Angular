@@ -45,6 +45,7 @@ import {FeedbackComponent} from "./NoteItNgApp/note-it-ng-app/feedback/feedback.
 import {NotesComponent} from "./NoteItNgApp/note-it-ng-app/notes/notes.component";
 import {NotFoundComponent} from "./NoteItNgApp/note-it-ng-app/not-found/not-found.component";
 import {CreateEmployeeComponent} from "./Angular-To-Docker-Example/employee/create-employee/create-employee.component";
+import {EmployeeListComponent} from "./Angular-To-Docker-Example/employee/employee-list/employee-list.component";
 // import {Ng4RecipesResolverService} from './AngularTheCompleteGuide/ng4-complete-guide/ng4-recipes/ng4-recipes-resolver.service';
 // import {Ng4AuthGuard} from './AngularTheCompleteGuide/ng4-complete-guide/ng4-auth/ng4-auth-guard';
 // tslint:disable-next-line:max-line-length
@@ -169,8 +170,9 @@ const appRoutes: Routes = [
   // { path: '**', component: NotFoundComponent },
 
   // aplikacja: Angular-To-Docker-Example
-  { path: 'employee-docker', redirectTo: 'employee', pathMatch: 'full' },
-  { path: 'add', component: CreateEmployeeComponent }
+  { path: 'app-angular-to-docker', redirectTo: 'employee', pathMatch: 'full' },
+  { path: 'add', component: CreateEmployeeComponent },
+  { path: 'employees', component: EmployeeListComponent }
   ];
 
 
