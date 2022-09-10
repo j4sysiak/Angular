@@ -7,11 +7,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 @SpringBootApplication
 public class SpringbootAngularToDockerApplication {
 
-	@GetMapping("/test")
-	public String get() {
-		return "Welcome in SpringbootAngularToDockerApplication";
-	}
-
 	public static void main(String[] args) {
 		SpringApplication.run(SpringbootAngularToDockerApplication.class, args);
 	}
