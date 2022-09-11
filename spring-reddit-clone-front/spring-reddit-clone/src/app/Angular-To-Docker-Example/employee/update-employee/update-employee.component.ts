@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import {Employee} from "../../model/employee.model";
+import {ApiResponse} from "../../model/api.response";
+import {ActivatedRoute, Router} from "@angular/router";
+import {EmployeeService} from "../../service/employee.service";
 
 @Component({
   selector: 'app-update-employee',
@@ -6,10 +10,57 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./update-employee.component.css']
 })
 export class UpdateEmployeeComponent implements OnInit {
+  id: number;
+  employee: Employee;
+  apiResponse:ApiResponse;
 
-  constructor() { }
+  constructor(private route: ActivatedRoute,private router: Router,
+              private employeeService: EmployeeService) { }
 
   ngOnInit(): void {
+    this.employee = new Employee();
+    this.id = this.route.snapshot.params['id'];
+    this.employeeService.getEmployeeById(this.id).subscribe(
+       data => {
+        console.log(data)
+        this.employee = data;
+      }, error => console.log(error));
   }
 
+  onSubmit() {
+    this.employeeService.updateEmployee(this.id, this.employee)
+      .subscribe(data => console.log(data), error => console.log(error));
+    this.employee = new Employee();
+    this.router.navigate(['/employees']);
+  }
+
+
+  list(){
+    this.router.navigate(['employees']);
+  }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
