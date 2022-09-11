@@ -47,8 +47,14 @@ public class EmployeeController {
     }
 
     @PostMapping("/employees")
-    public Employee addEmployee(@RequestBody Employee employee) {
-        return employeeRepository.save(employee);
+    public Map<String, Boolean>  addEmployee(@RequestBody Employee employee) {
+//        return employeeRepository.save(employee);
+//        return ResponseEntity.ok(employeeRepository.save(employee));
+
+        employeeRepository.save(employee);
+        Map<String, Boolean> response = new HashMap<>();
+        response.put("create", Boolean.TRUE);
+        return response;
     }
 
     @PutMapping("/employees/{id}")

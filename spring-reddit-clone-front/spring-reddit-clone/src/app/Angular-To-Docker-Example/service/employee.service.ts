@@ -29,6 +29,9 @@ export class EmployeeService {
   createEmployee(employee: Employee): Observable<ApiResponse> {
     return this.http.post<ApiResponse>(this.baseUrl, employee);
   }
+  // createEmployee(employee: Employee): Observable<Employee[]> {
+  //   return this.http.post<Employee[]>(this.baseUrl, employee);
+  // }
 
   updateEmployee(id: number, employee: Employee): Observable<ApiResponse> {
     return this.http.put<ApiResponse>(this.baseUrl + employee.id, employee);
