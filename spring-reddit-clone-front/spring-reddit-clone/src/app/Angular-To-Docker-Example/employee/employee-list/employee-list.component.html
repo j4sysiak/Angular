@@ -3,14 +3,14 @@
     <h2>Employee List</h2>
   </div>
   <div class="panel-body">
-<!--    <table cellspacing="0" width="100%">-->
+    <table cellspacing="0" width="100%">
 
       <thead>
       <tr>
         <th >Name</th>
         <th >Email</th>
         <th >Department</th>
-<!--        <th >Phone</th>-->
+        <th >Phone</th>
         <th>Actions</th>
       </tr>
       </thead>
@@ -19,14 +19,14 @@
         <td>{{employee.name}}</td>
         <td>{{employee.email}}</td>
         <td>{{employee.department}}</td>
-<!--        <td>{{employee.phone}}</td>-->
+        <td>{{employee.phone}}</td>
 
         <td><button style='margin-right:16px' (click)="deleteEmployee(employee.id)" class="btn btn-danger">Delete</button>
           <button style='margin-right:16px' (click)="updateEmployee(employee.id)" class="btn btn-success" style="margin-left: 10px">Edit details</button>
         </td>
       </tr>
       </tbody>
-<!--    </table>-->
+    </table>
   </div>
 </div>
 
