@@ -11,17 +11,22 @@ import { Employee } from "../../model/employee.model";
 })
 export class EmployeeListComponent implements OnInit {
   //pierwszy sposób pobierania danych z backendu
-  // employees: ApiResponse;
+  employees: ApiResponse;
 
   //drugi sposób pobierania danych z backendu
-  employees: Employee[] = [];
+  // employees: Employee[] = [];
 
   constructor(private employeeService: EmployeeService,
               private router: Router) { }
 
   ngOnInit(): void {
+    this.getEmpl();
+  }
+
+  getEmpl() {
     this.employeeService.getEmployees().subscribe(
       response => {
+        console.log(response);
         this.employees = response;
       },
       err => {
@@ -30,9 +35,17 @@ export class EmployeeListComponent implements OnInit {
     );
   }
 
-  deleteEmployee(id) {
+  deleteEmployee(id: number) {
+    this.employeeService.deleteEmployee(id).subscribe(
+        data => {
+          console.log(data);
+          this.employees = data;
+          this.getEmpl();
+        },
+        error => console.log(error));
   }
 
-  updateEmployee(id) {
+  updateEmployee(id: number){
+    this.router.navigate(['update', id]);
   }
 }
