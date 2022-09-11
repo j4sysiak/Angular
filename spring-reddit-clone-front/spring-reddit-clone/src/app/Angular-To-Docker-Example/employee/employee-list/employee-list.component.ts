@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import {Observable} from "rxjs";
-import {ApiResponse} from "../../model/api.response";
-import {EmployeeService} from "../../service/employee.service";
-import {Router} from "@angular/router";
+import { ApiResponse } from "../../model/api.response";
+import { EmployeeService } from "../../service/employee.service";
+import { Router } from "@angular/router";
+import { Employee } from "../../model/employee.model";
 
 @Component({
   selector: 'app-employee-list',
@@ -10,20 +10,29 @@ import {Router} from "@angular/router";
   styleUrls: ['./employee-list.component.css']
 })
 export class EmployeeListComponent implements OnInit {
-  employees: Observable<ApiResponse>;
+  //pierwszy sposób pobierania danych z backendu
+  // employees: ApiResponse;
+
+  //drugi sposób pobierania danych z backendu
+  employees: Employee[] = [];
 
   constructor(private employeeService: EmployeeService,
               private router: Router) { }
 
   ngOnInit(): void {
-    this.employeeService.getEmployees();
+    this.employeeService.getEmployees().subscribe(
+      response => {
+        this.employees = response;
+      },
+      err => {
+        alert("An error has occurred");
+      }
+    );
   }
 
   deleteEmployee(id) {
-
   }
 
   updateEmployee(id) {
-
   }
 }

@@ -1,20 +1,25 @@
 import { Injectable } from '@angular/core';
-import {HttpClient} from "@angular/common/http";
-import {environment} from "../environments/environment";
-import {Observable} from "rxjs";
-import {ApiResponse} from "../model/api.response";
-import {Employee} from "../model/employee.model";
+import { HttpClient } from "@angular/common/http";
+import { environment } from "../environments/environment";
+import { Observable } from "rxjs";
+import { ApiResponse } from "../model/api.response";
+import { Employee } from "../model/employee.model";
 
 @Injectable({
   providedIn: 'root'
 })
 export class EmployeeService {
+  private baseUrl: string = environment.baseUrl+'/api/employees';
 
   constructor(private http: HttpClient) { }
-  private baseUrl: string = environment.baseUrl+'/api/employees/';
 
-  getEmployees() : Observable<ApiResponse> {
-    return this.http.get<ApiResponse>(this.baseUrl);
+  // pierwszy sposób pobierania danych, bezpośrednio na zwrotce mamy ApiResponse
+  // getEmployees(): Observable<ApiResponse> {
+  //   return this.http.get<ApiResponse>(this.baseUrl);
+  // }
+  // drugi sposób pobierania danych, bezpośrednio na zwrotce mamy tablicę Employee[]
+  getEmployees(): Observable<Employee[]> {
+    return this.http.get<Employee[]>(this.baseUrl);
   }
 
   getEmployeeById(id: number): Observable<any> {

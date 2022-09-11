@@ -1,5 +1,5 @@
 export class ApiResponse {
   status: number;
-  message: number;
+  header: number;
   result: any;
 }

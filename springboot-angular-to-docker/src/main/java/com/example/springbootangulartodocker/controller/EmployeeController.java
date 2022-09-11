@@ -31,7 +31,7 @@ public class EmployeeController {
         return "Welcome in SpringbootAngularToDockerApplication";
     }
 
-    //http://localhost:8080/api/employees
+    // http://localhost:8080/api/employees
     @GetMapping("/employees")
     public ResponseEntity<List<Employee>> getAllEmployees() {
         return ResponseEntity.ok(employeeRepository.findAll());
@@ -39,7 +39,7 @@ public class EmployeeController {
 
     // http://localhost:8080/api/employees/1
     @GetMapping("/employees/{id}")
-    public ResponseEntity<Employee> getEmployeeById(@PathVariable(value = "id") Long employeeId)
+    public ResponseEntity<Employee> getEmployeeById(@PathVariable(value = "id") Integer employeeId)
             throws ResourceNotFoundException {
         Employee employee = employeeRepository.findById(employeeId)
                 .orElseThrow(() -> new ResourceNotFoundException("Employee not found for this id :: " + employeeId));
@@ -52,14 +52,14 @@ public class EmployeeController {
     }
 
     @PutMapping("/employees/{id}")
-    public ResponseEntity<Employee> updateEmployee(@PathVariable(value = "id") Long employeeId,
+    public ResponseEntity<Employee> updateEmployee(@PathVariable(value = "id") Integer employeeId,
                                                    @RequestBody Employee employeeDetails) throws ResourceNotFoundException {
         Employee employee = employeeRepository.findById(employeeId)
                 .orElseThrow(() -> new ResourceNotFoundException("Employee not found for this id :: " + employeeId));
 
         employee.setName(employeeDetails.getName());
         employee.setEmail(employeeDetails.getEmail());
-        employee.setPhone(employeeDetails.getPhone());
+//        employee.setPhone(employeeDetails.getPhone());
         employee.setDepartment(employeeDetails.getDepartment());
 
         final Employee updatedEmployee = employeeRepository.save(employee);
@@ -67,7 +67,7 @@ public class EmployeeController {
     }
 
     @DeleteMapping("/employees/{id}")
-    public Map<String, Boolean> deleteEmployee(@PathVariable(value = "id") Long employeeId)
+    public Map<String, Boolean> deleteEmployee(@PathVariable(value = "id") Integer employeeId)
             throws ResourceNotFoundException {
         Employee employee = employeeRepository.findById(employeeId)
                 .orElseThrow(() -> new ResourceNotFoundException("Employee not found for this id :: " + employeeId));
