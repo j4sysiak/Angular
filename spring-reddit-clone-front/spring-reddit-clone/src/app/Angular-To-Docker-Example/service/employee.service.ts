@@ -14,13 +14,13 @@ export class EmployeeService {
   constructor(private http: HttpClient) { }
 
   // pierwszy sposób pobierania danych, bezpośrednio na zwrotce mamy ApiResponse
-  getEmployees(): Observable<ApiResponse> {
-    return this.http.get<ApiResponse>(this.baseUrl);
-  }
-  // drugi sposób pobierania danych, bezpośrednio na zwrotce mamy tablicę Employee[]
-  // getEmployees(): Observable<Employee[]> {
-  //   return this.http.get<Employee[]>(this.baseUrl);
+  // getEmployees(): Observable<ApiResponse> {
+  //   return this.http.get<ApiResponse>(this.baseUrl);
   // }
+  // drugi sposób pobierania danych, bezpośrednio na zwrotce mamy tablicę Employee[]
+  getEmployees(): Observable<Employee[]> {
+    return this.http.get<Employee[]>(this.baseUrl);
+  }
 
   getEmployeeById(id: number): Observable<any> {
     return this.http.get(this.baseUrl + id);
